@@ -1,11 +1,15 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { BsThreeDotsVertical } from 'react-icons/bs'
 import styled from 'styled-components'
-import {coins} from '../static/coins'
+import { coins } from '../static/coins'
 import Coin from './Coin'
 import BalanceChart from './BalanceChart'
 
-const Portfolio = () => {
+
+
+
+const Portfolio = ({thirdWebTokens, sanityTokens, walletAddress}) => {
+ 
   return (
     <Wrapper>
       <Content>
@@ -15,15 +19,15 @@ const Portfolio = () => {
               <BalanceTitle>Wallet balance</BalanceTitle>
               <BalanceValue>
                 {'€'}
-             {/*     {walletBalance.toLocaleString} */}
-             123,670
+                {/*     {walletBalance.toLocaleString} */}
+                123,670
               </BalanceValue>
             </Balance>
           </div>
           <BalanceChart />
         </Chart>
-       
-   <PortfolioTable>
+
+        <PortfolioTable>
           <TableItem>
             <Title>Your Assets</Title>
           </TableItem>
@@ -51,7 +55,7 @@ const Portfolio = () => {
             </div>
           </Table>
         </PortfolioTable>
-        </Content>
+      </Content>
     </Wrapper>
   )
 }
