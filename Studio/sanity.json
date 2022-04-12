@@ -1,11 +1,11 @@
 {
   "root": true,
-  "project": {
-    "name": "coinbase-nelis"
-  },
   "api": {
     "projectId": "zr0jrlbk",
     "dataset": "production"
+  },
+  "project": {
+    "name": "coinbase-nelis"
   },
   "plugins": [
     "@sanity/base",
