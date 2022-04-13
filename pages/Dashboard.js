@@ -22,7 +22,7 @@ const Dashboard = ({ address }) => {
 
   useEffect(() => {
     const getSanityAndThirdWebTokens = async () => {
-        const coins = await fetch(
+        const coins = await fetch (
           "https://zr0jrlbk.api.sanity.io/v2021-10-21/data/query/production?query=*%5B_type%3D%3D'coins'%5D%20%7B%0A%20%20name%2C%0A%20%20eurPrice%2C%0A%20%20contractAdress%2C%0A%20%20symbol%2C%0A%20%20logo%0A%7D"
         )
         const sanityTokens = (await coins.json()).result
