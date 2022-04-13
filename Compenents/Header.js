@@ -12,7 +12,7 @@ const Header = ({walletAddress, connectWallet }) => {
           <WalletLink>
             <WalletLinkTitle>Wallet Connected</WalletLinkTitle>
             <WalletAddress>
-            {walletAddress.slice(0, 7)}...{walletAddress.slice(35)}
+            {walletAddress}....{walletAddress}
             </WalletAddress>
           </WalletLink>
           
